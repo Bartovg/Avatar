@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Special+Elite&display=swap');
+
+body {
+    
+    font-family: 'Special Elite', cursive;
+    background-color: #393E46;
+    background-image:url(./assets/avatar2.png);
+}
+
+#Seleccionar-Mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+input:checked+label{
+    background-color:white;
+    color:black;
+    box-shadow: 5px 5px 5px 5px #434242;
+}
+
+.titulo { 
+    color:#E8D2A6;
+    
+}
+
+.titulo img{
+    width: 500px;
+}
+
+.subtitulo{
+    color:#E8D2A6;
+    font-size: 30px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-monster {
+    width: 160px;
+    height: 160px;
+    background: lightslategray;
+    padding: 10px;
+    border: 3px double  white;
+    box-sizing: border-box;
+    border-radius: 100px;
+    color: #F2F7A1;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.tarjeta-de-monster img {
+    width: 116px;
+}
+
+#boton-mascota{
+    font-family: 'Special Elite', cursive;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: #F2F7A1;
+    background: black;
+    margin-top: 60px;
+}
+
+
+#Elegir-Ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input {
+     display:none;
+}
+
+.elementos {
+    display: flex;
+    gap:10px;
+}
+
+.boton-ataque {
+    font-family: 'Special Elite', cursive;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: #F2F7A1;
+    background: black;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.boton-ataque img {
+    width: 30px;
+}
+
+.escenario {
+    display:flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.bichos, .bichos-enemigo {
+    width: 210px;
+    height: 240px;
+    background: lightslategray;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: #F2F7A1;
+    font-family: 'Special Elite', cursive;
+    display:flex;
+    justify-content: center;
+
+}
+
+#Mensajes {
+    width: 280px;
+    height: 180px;
+    background: black;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: #F2F7A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Special Elite', cursive;
+}
+
+#boton-reiniciar {
+    font-family: 'Special Elite', cursive;
+    width: 126px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: #F2F7A1;
+    background: gray;
+}
+
+.vidamia, .vidaenemigo {
+    width: 180px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 30px 30px 30px 30px;
+    color: #F2F7A1;
+    background: lightslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#imagen-jugador {
+    size: 80px
+}
+
+#COMBATE {
+    display:flex;
+}
+
+@media(max-width:360px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    #Mensajes {
+        width: 100px;
+        height: 80px;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    #boton-reiniciar {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+        
+    }
+
+    .titulo img{
+        width: 250px;
+    }
+
+    .tarjeta-de-monster img {
+        width: 80px;
+    }
+
+    .tarjeta-de-monster {
+        width: 100px;
+        height: 100px;
+    }
+
+    .escenario {
+        gap: 5px; 
+    }
+
+    .bichos, .bichos-enemigo {
+        width: 100px;
+        height: 130px;
+    }
+
+    .vidamia, .vidaenemigo {
+        width: 130px;
+        margin: 10px 5px 5px 5px;   
+    }
+      
+    .titulo {
+        font-size: 25px;
+    }
+}
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8"/>
+        <title>AVATAR!</title>
+        <link rel="stylesheet" href="./Aspecto.css">
+    </head>
+    <body>
+        <section id="Seleccionar-Mascota"> 
+            <h1 class="titulo"> <img src="./assets/titulo2.png" alt="Monster-Elements"></h1>
+
+            <h2 class="subtitulo">Elige tu Avatar:</h2>
+
+            <div id ="contenedorTarjetas" class = "tarjetas">  
+            
+            </div>
+
+            <button id="boton-mascota">Continuar</button>
+        </section>
+
+        <section id="Elegir-Ataque">
+            <h1 class="titulo">⚔️ DUELO ⚔️</h1>
+
+            <h2 class="subtitulo">Elige tu Ataque:</h2>
+
+            <div id ="contenedorAtaques"class="elementos">
+                        
+            </div>  
+
+            
+            <div class="escenario">
+
+                <div class="bichos">
+                    <img id ="imagen-jugador" src="" alt="">
+               </div>
+
+                <div id="Mensajes">
+                    <p id="resultado">Comienza Ahora!</p>
+
+                   <section id="Reiniciar">
+                       <button id="boton-reiniciar">Nueva Partida!</button>
+                   </section>
+               </div>
+
+               <div class="bichos-enemigo">
+                    <img id ="imagen-enemigo" src="" alt=""> 
+               </div>
+
+            </div>
+                
+ 
+                <div id="COMBATE"> 
+                    <div class="vidamia">
+                        <p id="monster-jugador"> </p>
+                        <p id="vidas-jugador">0</p>
+                        <div id="ataques-del-jugador"></div>
+                    </div>
+
+                    <div class="vidaenemigo">
+                        <p id="monster-enemigo"></p>
+                        <p id="vidas-enemigo">0</p>
+                        <div id="ataques-del-enemigo"></div>   
+                    </div>
+                </div>
+        </section> 
+        <script src="./jscp/monsters.js"></script>     
+    </body>
+</html>
